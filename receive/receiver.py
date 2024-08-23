@@ -9,9 +9,9 @@ server.listen()
 client, addr = server.accept()
 
 file_name = client.recv(1024).decode()
-print(file_name)
+print(f'received {file_name}')
 file_size = client.recv(1024).decode()
-print(file_size)
+print(f'file size: {file_size} bytes')
 
 
 # file
